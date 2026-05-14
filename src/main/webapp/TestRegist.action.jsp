@@ -13,7 +13,7 @@
 
 	<h2>成績登録</h2>
 
-	<form action="ScoreCreateExecute.action" method="post">
+	<form action="" method="post">
 
 		<p>
 			学生番号<br>
