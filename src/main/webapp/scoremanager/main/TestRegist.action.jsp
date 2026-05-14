@@ -9,7 +9,7 @@
 <title>成績登録</title>
 </head>
 
-<body>"src/main/webapp/TestRegist.action.jsp"
+<body>"/exam_login/scoremanager/main/TestRegist.action"
 
 	<h2>成績登録</h2>
 
