@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import tool.Action;
 
-public class TestRegistaction extends Action {
+public class TestRegistAction extends Action {
 
     @Override
     public void execute(
@@ -28,7 +28,8 @@ public class TestRegistaction extends Action {
         System.out.println(point);
 
         // 遷移先
-        String url = "TestRegist.action.jsp";
+        String url =
+            "/scoremanager/main/test_regist.jsp";
 
         // フォワード
         req.getRequestDispatcher(url)
