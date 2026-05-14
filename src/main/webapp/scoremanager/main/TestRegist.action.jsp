@@ -9,7 +9,7 @@
 <title>成績登録</title>
 </head>
 
-<body>
+<body>"src/main/webapp/TestRegist.action.jsp"
 
 	<h2>成績登録</h2>
 
