@@ -2,43 +2,57 @@
 	contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>成績登録</title>
-</head>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
 
-<body>"/exam_login/scoremanager/main/TestRegist.action"
+<c:import url="/common/base.jsp">
 
-	<h2>成績登録</h2>
+	<c:param name="title">
+		成績登録
+	</c:param>
 
-	<form action="" method="post">
+	<c:param name="scripts"></c:param>
 
-		<p>
-			学生番号<br>
-			<input type="text" name="studentNo">
-		</p>
+	<c:param name="content">
 
-		<p>
-			科目コード<br>
-			<input type="text" name="subjectCd">
-		</p>
+		<section class="me-4">
 
-		<p>
-			点数<br>
-			<input type="text" name="point">
-		</p>
+			<h2 class="h3 mb-3 fw-normal bg-secondary bg-opacity-10 py-2 px-4">
+				成績登録
+			</h2>
 
-		<p>
-			<input type="submit" value="登録して終了">
-		</p>
+			<form action="TestRegistExecute.action" method="post">
 
-	</form>
+				<div class="mb-3">
+					<label>学生番号</label>
+					<input type="text"
+						name="studentNo"
+						class="form-control">
+				</div>
 
-	<p>
-		<a href="ScoreList.action">戻る</a>
-	</p>
+				<div class="mb-3">
+					<label>科目コード</label>
+					<input type="text"
+						name="subjectCd"
+						class="form-control">
+				</div>
 
-</body>
-</html>
+				<div class="mb-3">
+					<label>点数</label>
+					<input type="text"
+						name="point"
+						class="form-control">
+				</div>
+
+				<div>
+					<input type="submit"
+						value="登録して終了"
+						class="btn btn-primary">
+				</div>
+
+			</form>
+
+		</section>
+
+	</c:param>
+
+</c:import>
