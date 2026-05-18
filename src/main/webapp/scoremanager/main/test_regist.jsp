@@ -16,37 +16,72 @@
 
 		<section class="me-4">
 
-			<h2 class="h3 mb-3 fw-normal bg-secondary bg-opacity-10 py-2 px-4">
+			<h2 class="h3 mb-4 fw-normal bg-secondary bg-opacity-10 py-3 px-4 rounded">
 				成績登録
 			</h2>
 
 			<form action="TestRegistExecute.action" method="post">
 
 				<div class="mb-3">
-					<label>学生番号</label>
+
+					<label class="form-label">
+						学生番号
+					</label>
+
 					<input type="text"
 						name="studentNo"
-						class="form-control">
+						class="form-control"
+						required>
+
 				</div>
 
 				<div class="mb-3">
-					<label>科目コード</label>
+
+					<label class="form-label">
+						科目コード
+					</label>
+
 					<input type="text"
 						name="subjectCd"
-						class="form-control">
+						class="form-control"
+						required>
+
 				</div>
 
 				<div class="mb-3">
-					<label>点数</label>
-					<input type="text"
+
+					<label class="form-label">
+						回数
+					</label>
+
+					<input type="number"
+						name="no"
+						class="form-control"
+						required>
+
+				</div>
+
+				<div class="mb-4">
+
+					<label class="form-label">
+						点数
+					</label>
+
+					<input type="number"
 						name="point"
-						class="form-control">
+						class="form-control"
+						min="0"
+						max="100"
+						required>
+
 				</div>
 
 				<div>
+
 					<input type="submit"
-						value="登録して終了"
-						class="btn btn-primary">
+						value="登録"
+						class="btn btn-primary px-4">
+
 				</div>
 
 			</form>
