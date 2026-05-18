@@ -14,22 +14,22 @@
 
 		<section class="me-4">
 
-			<div class="alert alert-success mt-4">
+			<h2 class="h3 mb-3 fw-normal bg-secondary bg-opacity-10 py-2 px-4">
+				登録完了
+			</h2>
 
-				<h2 class="h4">
-					登録が完了しました。
-				</h2>
+			<div class="alert alert-success">
 
-			</div>
-
-			<div class="mt-3">
-
-				<a href="TestRegist.action"
-					class="btn btn-primary">
-					戻る
-				</a>
+				登録が完了しました。
 
 			</div>
+
+			<a href="TestRegist.action"
+				class="btn btn-primary">
+
+				戻る
+
+			</a>
 
 		</section>
 

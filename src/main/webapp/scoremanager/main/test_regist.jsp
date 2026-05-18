@@ -16,7 +16,7 @@
 
 		<section class="me-4">
 
-			<h2 class="h3 mb-4 fw-normal bg-secondary bg-opacity-10 py-3 px-4 rounded">
+			<h2 class="h3 mb-3 fw-normal bg-secondary bg-opacity-10 py-2 px-4">
 				成績登録
 			</h2>
 
@@ -30,8 +30,7 @@
 
 					<input type="text"
 						name="studentNo"
-						class="form-control"
-						required>
+						class="form-control">
 
 				</div>
 
@@ -43,8 +42,7 @@
 
 					<input type="text"
 						name="subjectCd"
-						class="form-control"
-						required>
+						class="form-control">
 
 				</div>
 
@@ -56,8 +54,7 @@
 
 					<input type="number"
 						name="no"
-						class="form-control"
-						required>
+						class="form-control">
 
 				</div>
 
@@ -67,24 +64,29 @@
 						点数
 					</label>
 
-					<input type="number"
+					<input type="text"
 						name="point"
-						class="form-control"
-						min="0"
-						max="100"
-						required>
+						class="form-control">
 
 				</div>
 
 				<div>
 
 					<input type="submit"
-						value="登録"
-						class="btn btn-primary px-4">
+						value="登録して終了"
+						class="btn btn-primary">
 
 				</div>
 
 			</form>
+
+			<div class="mt-3">
+
+				<a href="TestList.action">
+					戻る
+				</a>
+
+			</div>
 
 		</section>
 
