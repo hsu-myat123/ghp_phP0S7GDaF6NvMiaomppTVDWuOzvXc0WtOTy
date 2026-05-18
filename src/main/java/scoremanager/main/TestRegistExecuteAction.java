@@ -1,3 +1,4 @@
+
 package scoremanager.main;
 
 import bean.Student;
